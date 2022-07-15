@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recycled_products",
+  "info": {
+    "singularName": "recycled-product",
+    "pluralName": "recycled-products",
+    "displayName": "Recycled Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProductName": {
+      "type": "string"
+    },
+    "MaterialName": {
+      "type": "string"
+    },
+    "MaterialWeight": {
+      "type": "integer"
+    },
+    "RecycledDate": {
+      "type": "datetime"
+    },
+    "Toxicity": {
+      "type": "boolean"
+    },
+    "ProductImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
